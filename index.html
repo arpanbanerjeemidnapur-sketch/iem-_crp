@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IEM Campus Events | Institute of Engineering & Management, Kolkata</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Institute of Engineering and Management, Campus Events">
+      <img class="iem-logo logo-sm" alt="IEM logo">
+      <div>
+        <b>Institute of Engineering &amp; Management</b>
+        <small>Campus Events • Kolkata</small>
+      </div>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#events">Events</a>
+      <a href="#clubs">Clubs</a>
+      <a href="#campus">Campus</a>
+    </nav>
+    <button class="btn btn-yellow" id="hostBtn" style="margin-left:auto">Host an event</button>
+    <button class="passes-btn" id="passesBtn" aria-label="Open my passes">My passes <span id="passCount">0</span></button>
+  </div>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <div class="hero-id"><div class="college-line"><i>IEM</i> Institute of Engineering &amp; Management, Kolkata</div></div>
+        <h1>Every fest, hackathon and workshop at <mark>IEM</mark>. One place.</h1>
+        <p class="lead">Browse what's on across campus, grab a seat in a few taps, and walk in with your digital pass. No forms on paper, no queue at the desk.</p>
+        <div class="cta">
+          <a class="btn btn-yellow" href="#events">Browse events</a>
+          <button class="btn btn-ghost" id="hostBtn2">Host an event</button>
+        </div>
+        <div class="facts">
+          <div><b id="evCount">0</b><span>events on the calendar</span></div>
+          <div><b>6</b><span>student clubs</span></div>
+          <div><b>Free</b><span>digital pass for every event</span></div>
+        </div>
+      </div>
+
+      <aside class="flag" aria-label="Flagship event">
+        <div class="flag-in">
+          <span class="tag">Flagship • Seats open</span>
+          <h2>IEM HackSprint 24</h2>
+          <p class="sub">24-hour build marathon • Management House, Salt Lake</p>
+          <div class="count" aria-live="off">
+            <div><b id="cd-d">00</b><span>days</span></div>
+            <div><b id="cd-h">00</b><span>hours</span></div>
+            <div><b id="cd-m">00</b><span>mins</span></div>
+            <div><b id="cd-s">00</b><span>secs</span></div>
+          </div>
+          <div class="row">
+            <div><b>28 Nov 2026</b>9:00 AM IST</div>
+            <button class="btn btn-dark" id="flagReg">Get my pass</button>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- EVENTS -->
+  <section id="events">
+    <div class="wrap">
+      <div class="panel">
+        <div class="sec-head">
+          <div>
+            <h2>What's on at IEM</h2>
+          </div>
+          <p>Search by name, club or venue, or filter by type of event.</p>
+        </div>
+        <div class="tools">
+          <label class="search">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+            <input id="q" type="search" placeholder="Search events, clubs or venues" aria-label="Search events">
+          </label>
+          <div class="chips" id="chips" role="group" aria-label="Event type"></div>
+        </div>
+        <p class="status" id="status" aria-live="polite"></p>
+        <div class="grid" id="grid"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLUBS -->
+  <section id="clubs">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>The clubs behind the events</h2>
+        <p>Student chapters at IEM that run the workshops, fests and matches.</p>
+      </div>
+      <div class="clubs" id="clubGrid"></div>
+    </div>
+  </section>
+
+  <!-- CAMPUS -->
+  <section class="campus" id="campus">
+    <div class="wrap">
+      <div class="big">Institute of<br>Engineering &amp; Management<span>Salt Lake, Kolkata • Good education, good jobs</span></div>
+      <div class="cols">
+        <div class="loc"><span class="pin">Venue</span><h3>Management House</h3><p>Auditorium and seminar halls for flagship events, guest lectures and hackathons. Salt Lake, Sector V.</p></div>
+        <div class="loc"><span class="pin">Venue</span><h3>Gurukul Campus</h3><p>Labs and classrooms used for workshops, coding sprints and robotics sessions.</p></div>
+        <div class="loc"><span class="pin">Venue</span><h3>Open grounds</h3><p>Cultural nights, sports meets and club showcases happen outdoors.</p></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <div class="brand"><img class="iem-logo logo-foot" alt="IEM logo"><div><b style="color:#fff">Institute of Engineering &amp; Management</b><small>Campus Events Portal</small></div></div>
+        <p style="font-size:14.5px;max-width:42ch">Find campus events, register in seconds and keep every pass in one place.</p>
+      </div>
+      <div>
+        <h4>Quick links</h4>
+        <ul><li><a href="#events">Browse events</a></li><li><a href="#clubs">Student clubs</a></li><li><a href="#campus">Campus venues</a></li></ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul><li>Salt Lake, Sector V, Kolkata</li><li>Student Affairs Desk</li><li>events@iem.example</li></ul>
+      </div>
+    </div>
+    <div class="copy"><span>© 2026 Institute of Engineering &amp; Management, Kolkata. Student project.</span><span>Sample events shown for demonstration.</span></div>
+  </div>
+</footer>
+
+<!-- Register dialog -->
+<dialog id="regDlg" aria-labelledby="regTitle">
+  <div class="d-head"><button class="x" data-close aria-label="Close">×</button><h3 id="regTitle">Register</h3><p id="regSub"></p></div>
+  <div class="d-body">
+    <div class="ev-sum" id="regSum"></div>
+    <form id="regForm" novalidate>
+      <div class="field"><label for="rName">Full name</label><input id="rName" autocomplete="name" required><div class="err" id="eName"></div></div>
+      <div class="two">
+        <div class="field"><label for="rRoll">Roll / enrollment no.</label><input id="rRoll" required><div class="err" id="eRoll"></div></div>
+        <div class="field"><label for="rDept">Department &amp; year</label>
+          <select id="rDept"><option>CSE (1st Year)</option><option>CSE (2nd Year)</option><option>CSE (3rd Year)</option><option>CSE (4th Year)</option><option>IT (2nd Year)</option><option>ECE (3rd Year)</option><option>CSE - AI &amp; ML</option><option>EE / ME / Civil</option><option>BBA / MBA</option></select>
+        </div>
+      </div>
+      <div class="field"><label for="rMail">College email</label><input id="rMail" type="email" autocomplete="email" required><div class="err" id="eMail"></div></div>
+      <div class="actions"><button type="button" class="btn btn-ghost" data-close>Cancel</button><button class="btn btn-dark" type="submit">Confirm seat and get pass</button></div>
+    </form>
+  </div>
+</dialog>
+
+<!-- Pass dialog -->
+<dialog id="passDlg" aria-labelledby="passTitle">
+  <div class="d-head"><button class="x" data-close aria-label="Close">×</button><h3 id="passTitle">Your digital pass</h3><p>Show this at the check-in desk on the day.</p></div>
+  <div class="d-body" id="passBody"></div>
+</dialog>
+
+<!-- Host dialog -->
+<dialog id="hostDlg" aria-labelledby="hostTitle">
+  <div class="d-head"><button class="x" data-close aria-label="Close">×</button><h3 id="hostTitle">Host an event</h3><p>It appears in the event list right away.</p></div>
+  <div class="d-body">
+    <form id="hostForm" novalidate>
+      <div class="field"><label for="hTitle">Event title</label><input id="hTitle" required><div class="err" id="eHT"></div></div>
+      <div class="two">
+        <div class="field"><label for="hCat">Type</label><select id="hCat"><option value="tech">Tech &amp; Hackathons</option><option value="work">Workshops</option><option value="cult">Cultural</option><option value="sport">Sports</option><option value="sem">Seminars</option></select></div>
+        <div class="field"><label for="hClub">Club or chapter</label><input id="hClub" required><div class="err" id="eHC"></div></div>
+      </div>
+      <div class="two">
+        <div class="field"><label for="hDate">Date and time</label><input id="hDate" type="datetime-local" required><div class="err" id="eHD"></div></div>
+        <div class="field"><label for="hSeats">Seats</label><input id="hSeats" type="number" min="1" value="100"></div>
+      </div>
+      <div class="field"><label for="hVenue">Venue</label><input id="hVenue" required><div class="err" id="eHV"></div></div>
+      <div class="field"><label for="hDesc">What is it about?</label><textarea id="hDesc" rows="3"></textarea></div>
+      <div class="actions"><button type="button" class="btn btn-ghost" data-close>Cancel</button><button class="btn btn-dark" type="submit">Publish event</button></div>
+    </form>
+  </div>
+</dialog>
+
+<!-- My passes dialog -->
+<dialog id="myDlg" aria-labelledby="myTitle">
+  <div class="d-head"><button class="x" data-close aria-label="Close">×</button><h3 id="myTitle">My passes</h3><p>Passes you have collected at IEM.</p></div>
+  <div class="d-body" id="myBody"></div>
+</dialog>
+
+<div class="toast" id="toast" role="status"></div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
